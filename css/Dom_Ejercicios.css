@@ -58,8 +58,8 @@
     min-height: 100vh;
     text-align: center;
   }
-
-  .panel-btn {
+  
+  .panel-btn  {
     position: fixed;
     z-index: 999;
     bottom: 1vh;
@@ -133,10 +133,8 @@
 
   .hamburgers {
     font: inherit;
-    display: inline-block;
     overflow: visible;
     margin: 0;
-    padding: 15px;
     cursor: pointer;
     transition-timing-function: linear;
     transition-duration: .15s;
