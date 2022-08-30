@@ -8,5 +8,6 @@ const d= document;
 d.addEventListener("DOMContentLoaded", e =>{
     hamburguesaMenu(".panel-btn", ".panel",".menu a");
     digitalClock("#reloj","#iniciar-reloj","#detener-reloj");
+    Alarm("./assets/alarma.mp3","#iniciar-alarma","#detener-alarma")
 });
 

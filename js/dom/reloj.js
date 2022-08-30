@@ -21,6 +21,26 @@ let clockTempo;
  })
 };
 
-export function Alarm(){
+export function Alarm(sound,btnini,btnstop){
 
+    let alarmTempo;
+    const $alarm = d.createElement("audio");
+    $alarm.src= sound;
+
+    d.addEventListener("click", (e)=>{
+        if(e.target.matches(btnini)){
+            alarmTempo= setTimeout(()=>{
+                $alarm.play();
+            },1000);
+
+        e.target.disabled=true;
+        }
+
+        if(e.target.matches(btnstop)){
+            $alarm.pause();
+            $alarm.currentTime =0;
+            d.querySelector(btnini).disabled= false;
+        }
+        
+    })
 };
