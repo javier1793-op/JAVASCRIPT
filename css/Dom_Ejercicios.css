@@ -143,3 +143,20 @@
     color: inherit;
     border: 0;
   }
+
+  .stage {
+    display: flex;
+    min-height: 50vh;
+    background-size: 100% 100%;
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBBgtMil3kgycSv1_URYYU3lAI0bAtxAa1jA&usqp=CAU"); ;
+  }
+  
+  .ball {
+    margin: auto;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color:transparent;
+  }
+
+  
